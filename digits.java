@@ -12,11 +12,11 @@ public class digits{
         int thousands;
         int num;
 
-        num = 2258;
-        hundreds = ((num/10)%10)/2;
+        num = 6258;
+        hundreds = ((num/100)%10);
         tens = (num/10)%10;
         ones = num%10;
-        thousands = (((num/10)%10)/2)%10;
+        thousands = (num/1000)%10;
 
         
         System.out.println("The ones digit is " + ones);
