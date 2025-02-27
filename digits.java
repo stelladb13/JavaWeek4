@@ -1,3 +1,4 @@
+import java.util.*;
 public class digits{
 
     /****2/25/25
@@ -11,8 +12,12 @@ public class digits{
         int hundreds;
         int thousands;
         int num;
+        Scanner input = new Scanner(System.in);
 
-        num = 6258;
+        System.out.println("Enter a four digit number: ");
+        //num = 6258
+        num = input.nextInt();
+        input.close();
         hundreds = ((num/100)%10);
         tens = (num/10)%10;
         ones = num%10;
@@ -23,6 +28,9 @@ public class digits{
         System.out.println("The tens digit is " + tens);
         System.out.println("The hundreds digit is " + hundreds);
         System.out.println("The thousands digit is " + thousands);
+
+        
+
         
     }
 
