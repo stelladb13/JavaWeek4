@@ -13,10 +13,16 @@ public class TempCon {
         double celsius;
 
         temp = input.nextInt();
-        input.close();
-        celsius = (5/9)*(temp - 32);
         
-        System.out.println("The celsius Temperature is " + celsius);
+        input.close();
+        celsius = (5.0/9.0*(temp - 32));
+        
+        
+
+        int whole = 10;
+        double fraction = 0.5;
+        int answer = whole + fraction;
+        System.out.println(answer);
 
 
 
